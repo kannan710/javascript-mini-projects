@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="container box">
+        <div class="music">
+          <!-- music player -->
+          <div class="music-player">
+            <!-- header -->
+            <div class="header">
+              <div class="music-icon">🎵</div>
+              <h2>Now Playing</h2>
+              <div class="bur-icon">🍔</div>
+            </div>
+            <!-- song details -->
+            <div class="details">
+              <p class="title">Song title</p>
+              <p class="artist">Artist name</p>
+            </div>
+            <!-- player controls -->
+            <div class="controls">
+              <div class="song-timer">
+                <span class="current-time">00:12</span>
+                <span class="duration-time">04:10</span>
+              </div>
+              <div class="duration">
+                <input
+                  type="range"
+                  class="duration-slider"
+                  min="0"
+                  max="100"
+                  value="0"
+                />
+              </div>
+              <!-- Buttons -play, next and prev -->
+              <div class="buttons">
+                <button class="prev">
+                  <div>⏮️</div>
+                </button>
+                <button class="play">
+                  <div>▶️</div>
+                </button>
+                <button>
+                  <div class="next">⏭️</div>
+                </button>
+              </div>
+              <!-- autoplay -->
+              <button class="play-all">Play All ♻️</button>
+              <!-- volume -->
+              <div class="volume">
+                <p class="show-volume">100</p>
+                <div class="volume-icon">🔇</div>
+                <input type="range" id="volume" min="0" max="100" value="0" />
+              </div>
+            </div>
+          </div>
+          <!-- playlist -->
+          <div class="music-playlist">
+            <!-- header -->
+            <div class="header playlist-header">
+              <div class="music-icon">🎵</div>
+              <h2>Now Playing</h2>
+              <div class="cross-icon">❌</div>
+            </div>
+            <!-- playlist item -->
+            <div class="playlist-div">
+              <!-- <div class="playlist">
+                <span class="song-index">1</span>
+                <p class="single-song">Song one</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="music.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
